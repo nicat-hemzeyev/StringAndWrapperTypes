@@ -1,21 +1,30 @@
 import java.util.Arrays;
-import java.util.Locale;
+import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        //task3
+//task1
+
+
+//task2
+        System.out.println("Enter a String");
+        Scanner sc = new Scanner(System.in);
+        String input = sc.nextLine();
+        StringBuilder sj = new StringBuilder(input);
+        String polindrom = sj.reverse().toString();
+        System.out.println(input.equals(polindrom));
+
+//task3
         StringBuilder a = new StringBuilder("hello");
         System.out.println(a.reverse());
 
-        //task4
+//task4
         String b = "listen";
         String c = "silent";
         char[] c1 = b.toCharArray();
         char[] c2 = c.toCharArray();
         Arrays.sort(c1);
         Arrays.sort(c2);
-        System.out.println(c1);
-        System.out.println(c2);
         System.out.println(Arrays.equals(c1, c2));
 
 //task5
@@ -40,5 +49,10 @@ public class Main {
         }
         String f ="salam dunya";
         StringBuilder nv = new StringBuilder(f);
+
+//task7
+
+//task8
+
     }
 }
